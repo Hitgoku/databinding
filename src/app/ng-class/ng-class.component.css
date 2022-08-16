@@ -1,0 +1,10 @@
+.backGround-color-info{
+    font-size: xx-large;
+}
+.backGround-color-error{
+    background-color: red;
+}
+
+.backGround-color-success{
+    background-color: green;
+}
