@@ -1,0 +1,38 @@
+
+<div class="container bg-info">
+    <h3 class="text-center ">Welcome to Our Website</h3>
+    <div class="jumbotron text-center " style="padding-left: 38%;">
+       
+    <div class="row">
+        <div class="col col-lg-5">
+    <label class="form-label font-wt"  style="font-weight: bold !important"  >First Name</label>
+    <input class="form-control" [(ngModel)] = "fName"  [placeholder] = "fNameProperty" [ngClass]="fNamengError" />
+
+    </div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >Last Name</label>
+<input class="form-control" [(ngModel)] = "lName"  [placeholder] = "fNameProperty" [ngClass]="lNamengError"  />
+
+</div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >Email</label>
+<input class="form-control" [(ngModel)] = "email"  [placeholder] = "fNameProperty"  [ngClass]="emailngError" />
+
+</div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >Password</label>
+<input class="form-control" [(ngModel)] = "pass"  [placeholder] = "fNameProperty" [ngClass]="passngError" >
+
+</div>
+</div>
+    <div class="text-center m-4" style="padding-right: 61%;">
+    <button class="btn btn-light m-4" (click)="checkTheFileds();" >Register</button>
+</div>
+</div>
+</div>
