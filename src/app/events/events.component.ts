@@ -21,6 +21,7 @@ export class EventsComponent implements OnInit {
   lNamengError = {};
   emailngError = {};
   passngError = {};
+  isEmailPresent = true;
   
 
 
@@ -40,6 +41,9 @@ export class EventsComponent implements OnInit {
       this.emailngError = {"bg-danger":this.email.length<=0};
       this.passngError = {"bg-danger":this.pass.length<=0};
 
+      this.isEmailPresent = this.email.length>0;
+
   }
+  
 
 }

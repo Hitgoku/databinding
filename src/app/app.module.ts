@@ -11,6 +11,8 @@ import { NgClass1Component } from './ng-class1/ng-class1.component';
 import { PB1Component } from './pb1/pb1.component';
 import { TwbComponent } from './twb/twb.component';
 import { EventsComponent } from './events/events.component';
+import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
+import { NgForPracticeComponent } from './ng-for-practice/ng-for-practice.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { EventsComponent } from './events/events.component';
     NgClass1Component,
     PB1Component,
     TwbComponent,
-    EventsComponent
+    EventsComponent,
+    NgIfDirectiveComponent,
+    NgForPracticeComponent
   ],
   imports: [
     BrowserModule,
