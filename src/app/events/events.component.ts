@@ -11,8 +11,8 @@ export class EventsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  fName = "default First Name";
-  lName = "default Last Name";
+  fName = "";
+  lName = "";
   email = "";
   pass ="";
   fNameProperty = "Enter First Name ";

@@ -13,6 +13,7 @@ import { TwbComponent } from './twb/twb.component';
 import { EventsComponent } from './events/events.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgForPracticeComponent } from './ng-for-practice/ng-for-practice.component';
+import { NgforprodComponent } from './ngforprod/ngforprod.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NgForPracticeComponent } from './ng-for-practice/ng-for-practice.compon
     TwbComponent,
     EventsComponent,
     NgIfDirectiveComponent,
-    NgForPracticeComponent
+    NgForPracticeComponent,
+    NgforprodComponent
   ],
   imports: [
     BrowserModule,
