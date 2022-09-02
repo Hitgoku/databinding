@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { product } from '../product';
+import { ProductService } from '../product.service';
+import { Productservice } from '../productservice';
 
 @Component({
   selector: 'app-events',
@@ -7,16 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private productService: ProductService, private router: Router) { }
+
+  title = "form page";
 
   ngOnInit(): void {
+    const xyz = new Productservice(); 
+    xyz.showPageAlert(this.title);
   }
-  fName = "";
-  lName = "";
-  email = "";
-  pass ="";
-  fNameProperty = "Enter First Name ";
-  lNameProperty = "Enter Last Name ";
+  prodName = "";
+  prodId = 0;
+  prodQty = 0;
+  prodAmt =0;
+  fNameProperty = "Product Name ";
+  lNameProperty = "Prodcut Id ";
   fNamengError = {};
   lNamengError = {};
   emailngError = {};
@@ -24,26 +32,33 @@ export class EventsComponent implements OnInit {
   isEmailPresent = true;
   
 
+  addNewProdct() {
+    let newProduct:product =  {prodctName:this.prodName, productType:"", productId:this.prodId, productAmt:this.prodAmt, productQty:this.prodQty};
+    this.productService.addProduct(newProduct);
+    this.router.navigateByUrl('/productList');
 
-  loadUserNameFromCache() {
-    this.fName ="";
-    this.lName = "";
   }
 
-  checkTheFileds() {
 
-    if(this.fName === "" || this.lName === '' || this.email === '' || this.pass === '') {
-      alert('all fields are mandetory');
+  // loadUserNameFromCache() {
+  //   this.fName ="";
+  //   this.lName = "";
+  // }
+
+  // checkTheFileds() {
+
+  //   if(this.fName === "" || this.lName === '' || this.email === '' || this.pass === '') {
+  //     alert('all fields are mandetory');
       
-    }
-    this.fNamengError = {"bg-danger":this.fName.length<=0};
-      this.lNamengError = {"bg-danger":this.lName.length<=0};
-      this.emailngError = {"bg-danger":this.email.length<=0};
-      this.passngError = {"bg-danger":this.pass.length<=0};
+  //   }
+  //   this.fNamengError = {"bg-danger":this.fName.length<=0};
+  //     this.lNamengError = {"bg-danger":this.lName.length<=0};
+  //     this.emailngError = {"bg-danger":this.email.length<=0};
+  //     this.passngError = {"bg-danger":this.pass.length<=0};
 
-      this.isEmailPresent = this.email.length>0;
+  //     this.isEmailPresent = this.email.length>0;
 
-  }
+  // }
   
 
 }

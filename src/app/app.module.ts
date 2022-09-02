@@ -14,7 +14,8 @@ import { EventsComponent } from './events/events.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgForPracticeComponent } from './ng-for-practice/ng-for-practice.component';
 import { NgforprodComponent } from './ngforprod/ngforprod.component';
-
+import { ProductService } from './product.service';
+import { ViewProductComponent } from './view-product/view-product.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,14 +29,15 @@ import { NgforprodComponent } from './ngforprod/ngforprod.component';
     EventsComponent,
     NgIfDirectiveComponent,
     NgForPracticeComponent,
-    NgforprodComponent
+    NgforprodComponent,
+    ViewProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

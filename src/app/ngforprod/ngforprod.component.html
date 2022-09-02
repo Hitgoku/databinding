@@ -5,19 +5,20 @@
         <th>Product  Name</th>
         <th>Product id</th>
         <th>Quantity</th>
-        <th>Total</th>
-        <th>Create</th>
+        <th>Amount</th>
+        <th>View</th>
         <th>Update</th>
         <th>Delete</th>
     </tr>
     <tr *ngFor="let prod of products; let y=index;">
         <td>{{y+1}}</td>
-        <td>{{prod.prodname}}</td>
-        <td>{{prod.prodid}}</td>
-        <td>{{prod.Quantity}}</td>
-        <td>{{prod.Total}}</td>
-        <td><button class="btn bg-info  " (click) = "addprod(y)">Add</button></td>
+        <td>{{prod.prodctName}}</td>
+        <td>{{prod.productId}}</td>
+        <td>{{prod.productQty}}</td>
+        <td>{{prod.productAmt}}</td>
+        <td><button class="btn bg-info  "  routerLink = '/viewProduct/{{y+1}}'>View</button></td>
         <td><button class="btn bg-warning">Update</button></td>
-        <td><button class="btn bg-danger" style ="color: black;" (click) = "deleteprod(y)">Delete</button></td>
+        <td><button class="btn bg-danger" style ="color: black;" >Delete</button></td>
     </tr>
+    <div ><button class="btn btn-success" routerLink = '/addProduct' >Add New Product</button></div>
 </table>

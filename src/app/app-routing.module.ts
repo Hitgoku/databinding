@@ -2,10 +2,12 @@ import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { EventsComponent } from './events/events.component';
 import { NgforprodComponent } from './ngforprod/ngforprod.component';
+import { ViewProductComponent } from './view-product/view-product.component';
 
 const routes: Routes = [
-  {path:'ng1' , component:NgforprodComponent},
-  {path:'ng2' , component:EventsComponent}
+  {path:'productList' , component:NgforprodComponent},
+  {path:'addProduct' , component:EventsComponent},
+  {path:'viewProduct/:id' , component:ViewProductComponent},
 
 ];
 
