@@ -1,0 +1,42 @@
+
+<div class="container bg-info">
+    <h3 class="text-center ">Indian Cricket Team</h3>
+    <div class="jumbotron text-center " style="padding-left: 38%;">
+       
+    <div class="row">
+        <div class="col col-lg-5">
+    <label class="form-label font-wt"  style="font-weight: bold !important"  >Cricketer Name</label>
+    <input type="text" class="form-control" [(ngModel)]="Cric"  />
+
+    </div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >T20</label>
+<input class="form-control" [(ngModel)] = "T20"  />
+
+</div>
+</div>
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >ODI</label>
+<input class="form-control" [(ngModel)] = "ODI"  />
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col col-lg-5">
+<label class="form-label font-wt"  style="font-weight: bold !important"  >Test</label>
+<input class="form-control" [(ngModel)] = "Test"  />
+
+</div>
+</div>
+
+    <div class="text-center m-4" style="padding-right: 61%;">
+    <button class="btn btn-light m-4" (click)="addNewPlayer();" >Add Player</button>
+</div>
+</div>
+</div>
+
+

@@ -16,6 +16,13 @@ import { NgForPracticeComponent } from './ng-for-practice/ng-for-practice.compon
 import { NgforprodComponent } from './ngforprod/ngforprod.component';
 import { ProductService } from './product.service';
 import { ViewProductComponent } from './view-product/view-product.component';
+import { CrickComponent } from './crick/crick.component';
+import { CricketService } from './cricket.service';
+import { PlayerComponent } from './player/player.component';
+import { PlayerviewComponent } from './playerview/playerview.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +37,18 @@ import { ViewProductComponent } from './view-product/view-product.component';
     NgIfDirectiveComponent,
     NgForPracticeComponent,
     NgforprodComponent,
-    ViewProductComponent
+    ViewProductComponent,
+    CrickComponent,
+    PlayerComponent,
+    PlayerviewComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [ProductService],
+  providers: [ProductService,CricketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
