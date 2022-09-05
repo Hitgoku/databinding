@@ -11,8 +11,8 @@ const routes: Routes = [
   // {path:'productList' , component:NgforprodComponent},
   // {path:'addProduct' , component:EventsComponent},
   // {path:'viewProduct/:id' , component:ViewProductComponent},
-  {path:'Playerlist' , component:PlayerComponent},
   {path:'CrickList' , component:CrickComponent},
+  {path:'Playerlist' , component:PlayerComponent},
   {path:'viewPlayer/:playerId' , component:PlayerviewComponent},
 
 ];

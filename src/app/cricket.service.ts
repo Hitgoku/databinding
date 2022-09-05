@@ -6,22 +6,21 @@ import { Crick } from './crick';
 })
 export class CricketService {
 
-  CricketList:Crick[]=[];
+  CricketList: Crick[] = [];
   constructor() { }
   getPlayer() {
     return this.CricketList;
   }
 
-  addPlayer(newPlayer: Crick) {
-    this.CricketList.push(newPlayer);
+  addPlayer(newabc: Crick) {
+    this.CricketList.push(newabc);
   }
-  display(){
-   return "Congratulations !!! You are Selected in Indian Team";
-  }
-
-
-  info:string[]=[];
-  getinfo():string[]{
-    return this.info;
+  // display() {
+  //   return "Congratulations !!! You are Selected in Indian Team";
+  // }
+  getProductById(id : number) {
+    return this.CricketList[id];
   }
 }
+
+
