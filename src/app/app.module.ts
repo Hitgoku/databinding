@@ -20,6 +20,7 @@ import { CrickComponent } from './crick/crick.component';
 import { CricketService } from './cricket.service';
 import { PlayerComponent } from './player/player.component';
 import { PlayerviewComponent } from './playerview/playerview.component';
+import { EditPlayerComponent } from './edit-player/edit-player.component';
 
 
 
@@ -40,7 +41,8 @@ import { PlayerviewComponent } from './playerview/playerview.component';
     ViewProductComponent,
     CrickComponent,
     PlayerComponent,
-    PlayerviewComponent
+    PlayerviewComponent,
+    EditPlayerComponent
     
   ],
   imports: [

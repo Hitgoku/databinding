@@ -17,6 +17,7 @@ export class PlayerService {
   }
 
   getProductById(id : number) {
+    console.log(this.CricketList);
     return this.CricketList[id];
   }
 }

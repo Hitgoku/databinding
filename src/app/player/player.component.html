@@ -13,10 +13,10 @@
         <td>{{cric.ODIRuns}}</td>
         <td>{{cric.TestRuns}}</td>
         <td><button class="btn bg-info  "  routerLink = '/viewPlayer/{{i}}'>View Player</button></td>
-        <td><button class="btn bg-warning">Update</button></td>
-        <!-- <td><button class="btn bg-danger" style ="color: black;" >Delete Player</button></td>-->
+        <td><button class="btn bg-warning" routerLink="/editPlayer/{{i}}">Update</button></td>
+        <td><button class="btn bg-danger" style ="color: black;" (click)="deletePlayer('{{i}}')">Delete Player</button></td>
     </tr>
-    <div ><button class="btn btn-success" routerLink = '/Playerlist' >Add New Player</button></div>
+    <div ><button class="btn btn-success" routerLink = '/createPlayer' >Add New Player</button></div>
     
     </table>
     

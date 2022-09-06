@@ -3,4 +3,5 @@ export interface Crick {
     T20Runs:number;
     ODIRuns:number;
     TestRuns:number;
+    playerPicUrl:String;
 }

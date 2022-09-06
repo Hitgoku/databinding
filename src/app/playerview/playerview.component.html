@@ -1,16 +1,20 @@
-
- <div class="container">
+<div class="container">
     <div class="row">
         <h1 class="text-center">
-            <span>Player Details</span></h1>
-        
+            <span>Player Details</span>
+        </h1>
+
         <div class="col-md-12 text-center">
             <div class="card profile-card-1">
-                <img src="https://cricketaddictor.com/wp-content/uploads/2021/03/Sachin-Tendulkar-6.jpg" alt="profile-sample1" class="background"/>
+                <img src='{{playerView.playerPicUrl}}'
+                    alt="profile-sample1" class="background" />
                 <div class="card-content">
-                <h2>{{playerDataToView.CricketName}}<small>Having T20Runs {{playerDataToView.T20Runs}} <br> is ODIruns {{playerDataToView. ODIRuns}}</small></h2>
-                <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                    <h2>{{playerView.CricketName}}<small>Having T20Runs {{playerView.T20Runs}} <br> is
+                            ODIruns {{playerView. ODIRuns}}</small></h2>
+                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i
+                                class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                 </div>
             </div>
             <p class="mt-3 w-100 float-left text-center"><strong>Basic Profile Card</strong></p>
+        <button class="btn btn-info" routerLink="/Playerlist">Show List</button>
         </div>

@@ -18,4 +18,9 @@ export class PlayerComponent implements OnInit {
 this.Crickets = this._cricService.getPlayer();
 
   }
+
+  deletePlayer(id:any) {
+    this._cricService.CricketList.splice(id,1);
+    this.Crickets = this._cricService.getPlayer();
+  }
 }

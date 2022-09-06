@@ -9,18 +9,24 @@ export class CricketService {
   CricketList: Crick[] = [];
   constructor() { }
   getPlayer() {
+    console.log(this.CricketList);
     return this.CricketList;
   }
 
   addPlayer(newabc: Crick) {
+    console.log(this.CricketList);
     this.CricketList.push(newabc);
   }
-  // display() {
-  //   return "Congratulations !!! You are Selected in Indian Team";
-  // }
+  editPlayer(newabc: Crick, id:number) {
+    
+    this.CricketList[id] =newabc;
+  }
   getProductById(id : number) {
+    console.log(this.CricketList);
     return this.CricketList[id];
   }
-}
+
+  }
+
 
 

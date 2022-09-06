@@ -19,8 +19,9 @@ export class CrickComponent implements OnInit {
   T20 = 0;
   ODI= 0;
   Test = 0;
+  picUrl = "";
   addNewPlayer() {
-    let newPlayer:Crick =  {CricketName:this.Cric, T20Runs:this.T20, ODIRuns:this.ODI, TestRuns:this.Test};
+    let newPlayer:Crick =  {CricketName:this.Cric, T20Runs:this.T20, ODIRuns:this.ODI, TestRuns:this.Test, playerPicUrl:this.picUrl};
     this._cricketservice.addPlayer(newPlayer);
     this.route.navigateByUrl('/Playerlist');
 }
