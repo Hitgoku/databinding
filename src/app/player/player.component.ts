@@ -9,7 +9,8 @@ import { CricketService } from '../cricket.service';
   styleUrls: ['./player.component.css']
 })
 export class PlayerComponent implements OnInit {
-
+date :any = new Date();
+successRate = 0.90;
   public Crickets:Crick[]=[];
   constructor(private _cricService:CricketService) { }
 

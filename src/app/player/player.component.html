@@ -5,13 +5,17 @@
         <th>T20</th>
         <th>ODI</th>
         <th>TEST</th>
+        <th>Date of Birth</th>
+        <th>Success percent</th>
     </tr>   
-    <tr *ngFor="let cric of Crickets; let i=index;">
-        <td>{{i+1}}</td>
-        <td>{{cric.CricketName}}</td>
-        <td>{{cric.T20Runs}}</td>
-        <td>{{cric.ODIRuns}}</td>
-        <td>{{cric.TestRuns}}</td>
+    <tr *ngFor="let cric of Crickets; let i=index;" appBackgroundTransform ="lightgreen">
+        <td >{{i+1}}</td >
+        <td >{{cric.CricketName | maxLength}}</td>
+        <td>{{cric.T20Runs | lowRuns}}</td>
+        <td > {{cric.ODIRuns  | lowRuns}}</td>
+        <td >{{cric.TestRuns  | lowRuns}}</td>
+        <td>{{date | date : 'short'}}</td>
+        <td>{{successRate | percent}}</td>
         <td><button class="btn bg-info  "  routerLink = '/viewPlayer/{{i}}'>View Player</button></td>
         <td><button class="btn bg-warning" routerLink="/editPlayer/{{i}}">Update</button></td>
         <td><button class="btn bg-danger" style ="color: black;" (click)="deletePlayer('{{i}}')">Delete Player</button></td>

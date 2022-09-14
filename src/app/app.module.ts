@@ -21,6 +21,9 @@ import { CricketService } from './cricket.service';
 import { PlayerComponent } from './player/player.component';
 import { PlayerviewComponent } from './playerview/playerview.component';
 import { EditPlayerComponent } from './edit-player/edit-player.component';
+import { MaxLengthPipe } from './max-length.pipe';
+import { LowRunsPipe } from './low-runs.pipe';
+import { BackgroundTransformDirective } from './background-transform.directive';
 
 
 
@@ -42,7 +45,10 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
     CrickComponent,
     PlayerComponent,
     PlayerviewComponent,
-    EditPlayerComponent
+    EditPlayerComponent,
+    MaxLengthPipe,
+    LowRunsPipe,
+    BackgroundTransformDirective
     
   ],
   imports: [
